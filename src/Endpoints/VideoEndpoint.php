@@ -86,8 +86,10 @@ class VideoEndpoint extends AbstractEndpoint
     {
         $response = $this->call('Videos.getVideoById&video_id=' . $id);
 
-        return $this->serializer
-            ->deserialize($response, Video::class, static::OUTPUT_FORMAT);
+        /** @var Video $video */
+        $video = $this->serializer->deserialize($response, Video::class, static::OUTPUT_FORMAT);
+
+        return $video;
     }
 
     /**
