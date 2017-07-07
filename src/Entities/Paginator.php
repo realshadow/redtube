@@ -22,7 +22,7 @@ class Paginator
      *
      * @JMS\Exclude()
      */
-    private $page;
+    private $page = 1;
 
     /**
      * @var int $total
@@ -30,7 +30,7 @@ class Paginator
      * @JMS\Type("integer")
      * @JMS\SerializedName("count")
      */
-    private $total;
+    private $total = 0;
 
     /**
      * @var Collection|Videos $items
@@ -40,6 +40,13 @@ class Paginator
      */
     private $items;
 
+    /**
+     */
+    public function __construct()
+    {
+        $this->items = new Collection;
+    }    
+    
     /**
      * @JMS\PostDeserialize()
      */
