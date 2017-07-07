@@ -17,7 +17,7 @@ class VideoFilter implements Filterable
 {
 
     /**
-     * Paget that should be pulled
+     * Page that should be pulled
      *
      * @var int $page
      */
@@ -29,6 +29,13 @@ class VideoFilter implements Filterable
      * @var string $search
      */
     private $search;
+
+    /**
+     * Category the videos should belong to
+     *
+     * @var string $category
+     */
+    private $category;
 
     /**
      * List of tags
@@ -113,6 +120,20 @@ class VideoFilter implements Filterable
     public function getRequestedPage()
     {
         return $this->page;
+    }
+
+    /**
+     * Category the videos should belong to
+     *
+     * @param $category
+     *
+     * @return $this
+     */
+    public function category($category)
+    {
+        $this->category = $category;
+
+        return $this;
     }
 
     /**
