@@ -4,8 +4,6 @@ namespace Realshadow\Redtube\Entities;
 
 use Illuminate\Support\Collection;
 use JMS\Serializer\Annotation as JMS;
-use JMS\Serializer\DeserializationContext;
-use JMS\Serializer\JsonDeserializationVisitor;
 
 
 /**

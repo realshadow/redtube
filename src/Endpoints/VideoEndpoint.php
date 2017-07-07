@@ -21,7 +21,7 @@ class VideoEndpoint extends AbstractEndpoint
     /**
      * Deserialize API response into paginator object
      *
-     * @param $response
+     * @param string $response
      * @param VideoFilter $filter
      *
      * @return Paginator

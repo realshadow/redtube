@@ -1,3 +1,6 @@
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/realshadow/redtube-api/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/realshadow/redtube-api/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/realshadow/redtube-api/badges/build.png?b=master)](https://scrutinizer-ci.com/g/realshadow/redtube-api/build-status/master)
+
 # Redtube API
 
 PHP based API wrapper for [Redtube HTTP API](http://api.redtube.com/docs) .
