@@ -69,7 +69,7 @@ $redtube->videos->isActive($id);
  *
  * @return string
  */
-$redtube->videos->getEmbedCode(2258659);
+$redtube->videos->getEmbedCode($id);
 
 /**
  * Find deleted videos
