@@ -27,7 +27,7 @@ $redtube = new \Realshadow\Redtube\Redtube;
  *
  * @return Collection<Category>
  */
-$redtube->categories->all();
+$redtube->categories->getAll();
 
 /**
  * Get all stars
