@@ -17,10 +17,10 @@
         }
     },
     "require": {
-        "php": "^5.6.0 || ^7.0",
+        "php": "^7.3|^8.0",
         "jms/serializer": "^1.7",
-        "illuminate/support": "^5.3 || ^5.4",
+        "illuminate/support": "^8.3",
         "myclabs/php-enum": "^1.5",
-        "guzzlehttp/guzzle": "^6.3"
+        "guzzlehttp/guzzle": "^7.3"
     }
 }
